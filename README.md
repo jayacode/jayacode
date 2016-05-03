@@ -14,7 +14,13 @@ The JayaCode Framework
 Via Composer
 
 ``` bash
-$ composer require jayacode/jayacode
+$ composer create-project --prefer-dist jayacode/jayacode=dev-master name-project
+```
+
+## Start Server
+
+``` bash
+$ php -S localhost:8080 -t public
 ```
 
 ## Testing

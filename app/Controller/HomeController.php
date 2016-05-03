@@ -5,6 +5,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return "Hello Worlds";
+        return $this->view->create("home/index.view.php");
     }
 }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="jayacode">
+    <meta name="description" content="The Best PHP Framework">
+    <meta name="keywords" content="jayacode, jaya code, PHP, framework">
+
+
+    <title>JAYACODE</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+
+    <style type="text/css">
+        #home {
+            overflow: hidden;
+            background-color: #18BB9C;
+            min-height:100%;
+            min-height:100vh;
+        }
+
+        .home-title {
+            margin-top: 30%;
+            margin-top: 30vh;
+        }
+
+        .title h1 {
+            display: inline-block;
+        }
+
+        .title-code {
+            color: #565656;
+        }
+
+        h1, h2 {
+            font-family: 'Oswald', sans-serif;
+            color :white;
+        }
+
+        h1 {
+
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        a {
+            color: #565656;
+        }
+
+        a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<section id="home">
+    <div class="container">
+        <div class="home-title">
+            <div class="text-center title">
+                <h1 class="title-jaya animated bounce">JAYA</h1>
+                <h1 class="title-code">CODE</h1>
+            </div>
+
+            <h2 class="text-center">The Best PHP Framework</h2>
+            <div class="text-center title-github">
+                <a href="https://github.com/jayacode"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        setTimeout(function() {
+            $('.title-jaya').addClass('animated bounce');
+        }, 500);
+        setTimeout(function() {
+            $('.title-code').addClass('animated bounce');
+        }, 1000);
+
+        setTimeout(function() {
+            $('.title-github').addClass('animated shake');
+        }, 2000);
+    });
+</script>
+</body>
+</html>
