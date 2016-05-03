@@ -30,7 +30,6 @@ If you discover any security related issues, please email restu.suhendar@gmail.c
 ## Credits
 
 - [Restu Suhendar][link-author]
-- [All Contributors][link-contributors]
 
 ## License
 
