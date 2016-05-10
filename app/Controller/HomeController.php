@@ -5,6 +5,13 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return $this->view->create("home/index.view.php");
+        return $this->view->loadTemplate('home/index')->render(
+            [
+                "jaya"=> "JAYA",
+                "code" => function () {
+                    return strtoupper("code");
+                }
+            ]
+        );
     }
 }
