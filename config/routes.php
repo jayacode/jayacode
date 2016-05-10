@@ -1,8 +1,10 @@
 <?php
-return [
-    ["id" => "home", "path" => "/", "controller" => "HomeController", "action" => "index"],
+use JayaCode\Framework\Core\Route\Route;
 
-    ["id" => "about", "path" => "about", "action" => function () {
-        return "hello world";
-    }]
+return [
+    Route::get("home", "/", "index", "HomeController"),
+
+    Route::get("home", "about", function () {
+        return "Hello JayaCode";
+    })
 ];
