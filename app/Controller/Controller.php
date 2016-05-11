@@ -5,6 +5,10 @@ use JayaCode\Framework\Core\Controller\Controller as BaseController;
 use JayaCode\Framework\Core\Http\Request;
 use JayaCode\Framework\Core\Http\Response;
 
+/**
+ * Class Controller
+ * @package App\Controller
+ */
 class Controller extends BaseController
 {
     /**
