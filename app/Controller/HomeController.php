@@ -5,7 +5,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return $this->view->loadTemplate('home/index')->render(
+        return $this->view(
+            'home/index',
             [
                 "jaya"=> "JAYA",
                 "code" => function () {
