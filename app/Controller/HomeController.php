@@ -13,12 +13,10 @@ class HomeController extends Controller
     public function index()
     {
         return $this->view(
-            'home/index',
+            'home/index.twig',
             [
                 "jaya"=> "JAYA",
-                "code" => function () {
-                    return strtoupper("code");
-                }
+                "code" => "CODE"
             ]
         );
     }
