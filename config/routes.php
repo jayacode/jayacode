@@ -2,9 +2,10 @@
 use JayaCode\Framework\Core\Route\Route;
 
 return [
-    Route::get("home", "/", "index", "HomeController"),
+    Route::get("home", "/", ["controller" => "HomeController", "method" => "index"]),
 
-    Route::get("home", "about", function() {
+    Route::get("about", "about", function () {
         return "Hello JayaCode";
     })
+
 ];
