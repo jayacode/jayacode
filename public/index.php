@@ -6,6 +6,6 @@ require_once(__DIR__.'/../vendor/autoload.php');
 $app = new Application();
 
 $app->initConfigDir(dirname(__FILE__). "/..");
-$app->setListRoute(config("routes"));
+$app->setListRoute((array) config("routes"));
 
 $app->run();
