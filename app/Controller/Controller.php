@@ -1,9 +1,8 @@
 <?php
 namespace App\Controller;
 
+use JayaCode\Framework\Core\Application\Application;
 use JayaCode\Framework\Core\Controller\Controller as BaseController;
-use JayaCode\Framework\Core\Http\Request;
-use JayaCode\Framework\Core\Http\Response;
 
 /**
  * Class Controller
@@ -13,11 +12,10 @@ class Controller extends BaseController
 {
     /**
      * Controller constructor.
-     * @param Request $request
-     * @param Response $response
+     * @param Application $app
      */
-    public function __construct(Request $request = null, Response $response = null)
+    public function __construct(Application $app)
     {
-        parent::__construct($request, $response);
+        parent::__construct($app);
     }
 }
