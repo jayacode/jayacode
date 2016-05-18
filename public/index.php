@@ -4,7 +4,7 @@ use JayaCode\Framework\Core\Helper\Config\Config;
 
 require_once(__DIR__.'/../vendor/autoload.php');
 
-Application::initConfigDir(dirname(__FILE__). "/..");
+Application::initConfigDir(dirname(__FILE__)."/..");
 
 $app = new Application();
 
