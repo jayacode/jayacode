@@ -1,11 +1,12 @@
 <?php
+use App\Controller\HomeController;
+use JayaCode\Framework\Core\Route\Collector\RouteCollector;
 use JayaCode\Framework\Core\Route\Route;
 
-return [
-    Route::get("home", "/", ["controller" => "HomeController", "method" => "index"]),
+return function (RouteCollector $route) {
+    $route->addRoute(Route::get("home", "/", ["controller" => HomeController::class, "method" => "index"]));
 
-    Route::get("about", "about", function () {
+    $route->addRoute(Route::get("about", "about", function () {
         return "Hello JayaCode";
-    })
-
-];
+    }));
+};
