@@ -1,6 +1,6 @@
 <?php
 if (!defined("__APP_DIR__")) {
-    define("__APP_DIR__", __DIR__ . '/../');
+    define("__APP_DIR__", __DIR__.'/../');
 }
 
 if (!defined("__CONFIG_DIR__")) {
