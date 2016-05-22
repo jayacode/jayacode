@@ -1,0 +1,13 @@
+[@ parent master.layout @]
+
+[@ content body @]
+<div class="text-center title">
+    <h1 class="title-jaya animated bounce">{{ $jaya }}</h1>
+    <h1 class="title-code">{{ $code }}</h1>
+</div>
+
+<h2 class="text-center">The Best PHP Framework</h2>
+<div class="text-center title-github">
+    <a href="https://github.com/jayacode"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+</div>
+[@ endcontent@]
