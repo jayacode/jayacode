@@ -1,13 +1,9 @@
 <?php
 use JayaCode\Framework\Core\Application\Application;
-use JayaCode\Framework\Core\Helper\Config\Config;
 
-require_once(__DIR__.'/../vendor/autoload.php');
+$container = require __DIR__ . '/../app/bootstrap.php';
 
-Application::initConfigDir(dirname(__FILE__)."/..");
-
-$app = new Application();
-
-$app->setDataRoute(Config::load("routes.php"));
+/** @var Application $app */
+$app = $container->get(Application::class);
 
 $app->run();
